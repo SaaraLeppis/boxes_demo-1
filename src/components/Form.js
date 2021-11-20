@@ -5,11 +5,11 @@ class Form extends Component {
         spell: "",
         animal: "",
         year: "",
-        house: "",
+        house: "some house",
     }
     //can be event of only e
     inputHandler = (event) => {
-        console.log("hhghgghgh");
+
         this.setState({
             [event.target.name]: event.target.value,
         });
@@ -18,16 +18,19 @@ class Form extends Component {
     render() {
         return (
             <div>
-                <p>Spell</p>
+                <p>Spell:</p>
                 <input type="spell" name="spell" onChange={this.inputHandler} />
-                <input type="house" nam="house" onChange={this.inputHandler} />
+                <p>House:</p>
+                <input type="house" name="house" onChange={this.inputHandler} />
+                <p>Animal:</p>
                 <input type="animal" name="animal" onChange={this.inputHandler} />
+                <p>Year:</p>
                 <input type="year" name="year" onChange={this.inputHandler} />
 
                 <p> Spell: {this.state.spell}</p>
-                <p> Spell: {this.state.house}</p>
-                <p> Spell: {this.state.animal}</p>
-                <p> Spell: {this.state.year}</p>
+                <p> House: {this.state.house}</p>
+                <p> Animal: {this.state.animal}</p>
+                <p> Year: {this.state.year}</p>
             </div>
         );
     }

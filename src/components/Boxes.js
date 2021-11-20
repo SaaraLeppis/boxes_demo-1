@@ -7,7 +7,7 @@ class Boxes extends Component {
       { id: 1, name: "Margit", age: 25, title: "CEO" },
       { id: 2, name: "Kati", age: 35, title: "Designer" },
       { id: 3, name: "Mari", age: 40, title: "Developer" },
-      { id: 4, name: "Mari", age: 40, title: "Developer" },
+      { id: 4, name: "Sari", age: 45, title: "Developer" },
     ],
   };
 
